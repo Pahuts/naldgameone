@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  background-color: #FFBC97;
+}
+
+#level-title {
+  color: #8A39E1;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin:auto
+}
+.btn {
+  display: inline-block;
+  margin: 25px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #533535;
+  border-radius: 14px;
+}
+
+
+.green {
+  background-color: #F9D371;
+
+}
+.red {
+  background-color: #F47340;
+}
+.yellow {
+  background-color: #EF2F88;
+}
+.blue {
+  background-color: #8843F2; 
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: #F5CEBE;
+}
+
+.game-over {
+  background-color: #FF1818;
+  opacity: 0.6;
+}
+
+
+.tenlevels {
+  background-color: #4A3933;
+  opacity: 0.6;
+}
+
+#instructions {
+  color: #8A39E1;
+  font-family: "Press Start 2P", cursive;
+}
