@@ -9,13 +9,41 @@ var userClickPattern = []
 var started = false
 
 // start game when a key is pressed
-$(document).keypress(function () {
+$(document).keypress(function (e) {
   if (!started) {
     gameSequence()
     started = true
     $('#level-title').css('color', '#8A39E1')
+  } else {
+    if(e.key === 1) {
+      var buttonColor = "green"
+      userClickPattern.push(buttonColor)
+      animateClick(buttonColor)
+      // pass the last selected character for checking
+      checkAnswer(userClickPattern.length - 1)
+    } else if (e.key === 2) {
+      var buttonColor = "red"
+      userClickPattern.push(buttonColor)
+      animateClick(buttonColor)
+      // pass the last selected character for checking
+      checkAnswer(userClickPattern.length - 1)
+    } else if (e.key === 3) {
+      var buttonColor = "blue"
+      userClickPattern.push(buttonColor)
+      animateClick(buttonColor)
+      // pass the last selected character for checking
+      checkAnswer(userClickPattern.length - 1)
+    } else if (e.key === 4) {
+      var buttonColor = "yellow"
+      userClickPattern.push(buttonColor)
+      animateClick(buttonColor)
+      // pass the last selected character for checking
+      checkAnswer(userClickPattern.length - 1)
+    }
   }
 })
+
+
 
 //button click event
 $('.btn').click(function () {
